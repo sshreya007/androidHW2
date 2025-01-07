@@ -32,7 +32,7 @@ class AssignmentActivity : AppCompatActivity() {
         textViewEmail = findViewById(R.id.email)
         textViewPassword = findViewById(R.id.password)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.outputPassword)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
